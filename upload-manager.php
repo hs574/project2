@@ -24,11 +24,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             } else{
                 echo $_SERVER['DOCUMENT_ROOT']. "/upload/" . $_FILES["photo"]["name"];
                 echo "\n"; 
-                move_uploaded_file($_FILES["photo"]["tmp_name"],"/full/path/to/uploads/" . $_FILES["photo"]["name"]);
+                move_uploaded_file($_FILES["photo"]["tmp_name"],"/afs/cad.njit.edu/u/h/s/hs574/public_html/uploads" . $_FILES["photo"]["name"]);
                 echo "Your file was uploaded successfully.";
                   
 
-                   header("Location:https://web.njit.edu/~hs574/project2/display.php?name=$filename");
+                  // header("Location:https://web.njit.edu/~hs574/project2/display.php?name=$filename");
 
             }
 
