@@ -1,4 +1,6 @@
 <?php
+$target_dir = "upload/";
+$target_file = $target_dir . basename($_FILES["photo"]["name"]);
 // Check if the form was submitted
 function uploadmanager()
 {
