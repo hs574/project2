@@ -1,6 +1,6 @@
 <?php
 echo "<html><body><table border=1>\n\n";
-$name= "./upload/".$_GET['name'];
+$name= "upload/".$_GET['name'];
 
 
 echo $name;
