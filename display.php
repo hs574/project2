@@ -3,7 +3,7 @@ echo "<html><body><table border=1>\n\n";
 $name= $_SERVER['DOCUMENT_ROOT']."/upload/".$_GET['name'];
 
 
-
+echo $name;
 $f = fopen($name,"r");
 while (($line = fgetcsv($f)) !== false) {
         echo "<tr>";
