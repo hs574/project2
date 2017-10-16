@@ -26,7 +26,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 echo "Your file was uploaded successfully.";
 
 
-                   header("Location:Location:https://web.njit.edu/~hs574/project2/display.php?name=$filename");
+                   header("Location:https://web.njit.edu/~hs574/project2/display.php?name=$filename");
 
             }
 
