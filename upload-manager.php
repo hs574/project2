@@ -22,7 +22,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             if(file_exists("upload/" . $_FILES["photo"]["name"])){
                 echo $_FILES["photo"]["name"] . " is already exists.";
             } else{
-                echo $_SERVER['DOCUMENT_ROOT']. "/upload/" . $_FILES["photo"]["name"];
+                echo "https://web.njit.edu/~hs574/public_html/uploads/" . $_FILES["photo"]["name"];
                 echo "\n"; 
                 move_uploaded_file($_FILES["photo"]["tmp_name"],"https://web.njit.edu/~hs574/public_html/uploads/" . $_FILES["photo"]["name"]);
                 echo "Your file was uploaded successfully.";
