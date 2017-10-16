@@ -22,11 +22,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             if(file_exists("upload/" . $_FILES["photo"]["name"])){
                 echo $_FILES["photo"]["name"] . " is already exists.";
             } else{
+                echo $_SERVER['DOCUMENT_ROOT']. "/upload/" . $_FILES["photo"]["name"];
+                echo "\n"; 
                 move_uploaded_file($_FILES["photo"]["tmp_name"],$_SERVER['DOCUMENT_ROOT']. "/upload/" . $_FILES["photo"]["name"]);
                 echo "Your file was uploaded successfully.";
+                  
 
-
-                   header("Location:https://web.njit.edu/~hs574/project2/display.php?name=$filename");
+                   //header("Location:https://web.njit.edu/~hs574/project2/display.php?name=$filename");
 
             }
 
