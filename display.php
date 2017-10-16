@@ -1,6 +1,6 @@
 <?php
 echo "<html><body><table border=1>\n\n";
-$name= "upload\\".$_GET['name'];
+$name= $_SERVER['DOCUMENT_ROOT']."/upload/".$_GET['name'];
 
 
 
