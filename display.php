@@ -1,6 +1,6 @@
 <?php
 echo "<html><body><table border=1>\n\n";
-$name= "http://cgi.njit.edu/~hs574/cgi-bin/".$_GET['name'];
+$name= "https://web.njit.edu/~hs574/upload/".$_GET['name'];
 
 
 echo $name;
