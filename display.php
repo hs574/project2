@@ -1,6 +1,6 @@
 <?php
 echo "<html><body><table border=1>\n\n";
-$name= "https://web.njit.edu/~hs574/project2/upload/".$_REQUEST['name'];
+$name= "upload/".$_REQUEST['filename'];
 
 
 echo $name;
